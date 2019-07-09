@@ -1,3 +1,19 @@
+.news {
+  height: 500px;
+  width: 400px;
+  overflow: scroll;
+}
+
+.newsCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsCardImage img {
+  width: 100%;
+  height: auto;
+}
+
 .App {
   text-align: center;
   display: grid;
@@ -11,7 +27,8 @@
   border-radius: 10px;
 }
 
-.DateTimeCont h1, h2 {
+.DateTimeCont h1,
+h2 {
   margin: 3px;
 }
 
