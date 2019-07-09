@@ -1,5 +1,5 @@
 .news {
-  height: 100vh;
+  height: 500px;
   width: 400px;
   overflow: scroll;
 }
@@ -12,4 +12,27 @@
 .newsCardImage img {
   width: 100%;
   height: auto;
+}
+
+.App {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+
+.block {
+  width: 300px;
+  height: 175px;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+.DateTimeCont h1,
+h2 {
+  margin: 3px;
+}
+
+.DateTimeCont {
+  display: grid;
+  align-content: center;
 }
