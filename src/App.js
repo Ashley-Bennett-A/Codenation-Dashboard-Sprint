@@ -12,16 +12,17 @@ import ChuckNorris from "./Components/ChuckNorris";
 function App() {
   return (
     <div className="App">
-      {/* <center>
+      <center>
         <h1 className="titleIndex"> about: blank </h1>
-      </center> */}
-      {/* <DateTime />
+      </center>
+      <DateTime />
       <Weather />
-      <UsefulLinks /> */}
+      <UsefulLinks />
       <News />
-      {/* <Search />
+      <Search />
       <Chat />
-      <ChuckNorris /> {/* <Games /> */} */}
+      <ChuckNorris />
+      {/* <Games /> */}
     </div>
   );
 }
