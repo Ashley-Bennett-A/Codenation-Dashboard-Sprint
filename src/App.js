@@ -6,6 +6,7 @@ import Search from "./Components/Search";
 import UsefulLinks from "./Components/UsefulLinks";
 import Games from "./Components/Games";
 import Chat from "./Components/Chat";
+import ChuckNorris from "./Components/ChuckNorris";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <News />
       <Search />
       <Chat />
+      <ChuckNorris />
       {/* <Games /> */}
     </div>
   );
