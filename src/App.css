@@ -1,36 +1,70 @@
 .news {
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   left: 5px;
-  height: 100vh;
-  width: 400px;
-  overflow: scroll;
+  /* height: 400px; */
+  width: 100vw;
+  /* display: flex; */
+  overflow: hidden;
 }
 
 .newsCard {
-  display: flex;
+  display: inline-block;
+  padding: 0 2rem;
+  height: 100px;
+  width: auto;
 }
 
 .newsCardText {
-  width: 50%;
+  width: 100%;
   margin: 5px;
+  overflow: hidden;
 }
 
 .newsCardText h1 {
-  font-size: 10pt;
+  font-size: 12pt;
+  overflow-wrap: normal;
 }
 
 .newsCardImage {
-  width: 50%;
+  width: 400px;
   height: auto;
   border-radius: 8px;
   margin: 5px;
 }
 
 .newsCardImage img {
-  width: 100%;
+  width: 150px;
   height: auto;
   border-radius: 8px;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.tcontainer {
+  width: 100%;
+  overflow: hidden;
+}
+.ticker-wrap {
+  width: 100%;
+  /* height: 100px; */
+  padding-left: 100%;
+  background-color: #eee;
+}
+.ticker-move {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation: ticker 100s linear infinite;
+}
+.ticker-move:hover {
+  animation-play-state: paused;
 }
 
 .App {

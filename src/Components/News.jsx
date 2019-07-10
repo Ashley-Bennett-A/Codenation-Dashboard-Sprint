@@ -22,18 +22,27 @@ class News extends React.Component {
   }
   render() {
     return (
-      <div className="news">
-        {this.state.articles.map(article => {
-          return (
-            <NewsCard
-              link={article.url}
-              title={article.title}
-              subtitle={article.description}
-              image={article.urlToImage}
-            />
-          );
-        })}
+      <div class="tcontainer">
+        <div class="ticker-wrap">
+          <div class="ticker-move">
+            {this.state.articles.map(article => {
+              return (
+                <NewsCard
+                  link={article.url}
+                  title={article.title}
+                  subtitle={article.description}
+                  image={article.urlToImage}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
+      // <div className="news">
+      //   <div class="ticker-wrap">
+      //
+      //   </div>
+      // </div>
     );
   }
 }
