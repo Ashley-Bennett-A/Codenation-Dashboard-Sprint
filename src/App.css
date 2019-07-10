@@ -1,23 +1,65 @@
-.news {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  /* height: 400px; */
-  width: 100vw;
-  /* display: flex; */
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   overflow: hidden;
+  height: 200px;
+  background-color: rgba(#000, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+
+.news {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  animation: infinite linear ticker 100s;
+}
+
+.news:hover {
+  animation-play-state: paused;
 }
 
 .newsCard {
   display: inline-block;
-  padding: 0 2rem;
-  height: 100px;
   width: auto;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .newsCardText {
-  width: 100%;
-  margin: 5px;
+  height: auto;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -27,44 +69,16 @@
 }
 
 .newsCardImage {
-  width: 400px;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin: 5px;
 }
 
 .newsCardImage img {
-  width: 150px;
-  height: auto;
+  width: auto;
+  height: 110px;
+  padding: 0;
+  margin: 0;
   border-radius: 8px;
-}
-
-@keyframes ticker {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-.tcontainer {
-  width: 100%;
-  overflow: hidden;
-}
-.ticker-wrap {
-  width: 100%;
-  /* height: 100px; */
-  padding-left: 100%;
-  background-color: #eee;
-}
-.ticker-move {
-  display: inline-block;
-  white-space: nowrap;
-  padding-right: 100%;
-  animation: ticker 100s linear infinite;
-}
-.ticker-move:hover {
-  animation-play-state: paused;
 }
 
 .App {
