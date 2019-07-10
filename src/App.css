@@ -56,3 +56,8 @@ h2 {
   width: 100px;
   height: auto;
 }
+
+.titleIndex {
+  font-family: Helvetica, sans-serif;
+  font-size: 38px;
+}

@@ -9,6 +9,7 @@ import UsefulLinks from "./Components/UsefulLinks";
 function App() {
   return (
     <div className="App">
+      <center><h1 className="titleIndex">about:blank</h1></center>
       <DateTime />
       <Weather />
       <UsefulLinks />
