@@ -13,7 +13,9 @@ function NewsCardImage(props) {
 
   return (
     <div className={className}>
-      <img src={image} alt="" />
+      <a href={props.link} target="_blank" rel="noopener noreferrer">
+        <img src={image} alt="" />
+      </a>
     </div>
   );
 }
