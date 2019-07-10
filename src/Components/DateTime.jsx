@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 class DateTime extends Component {
     state = {
-        time: null
+        time: null,
+        h: null
     }
 
     componentDidMount() {
@@ -26,6 +27,7 @@ class DateTime extends Component {
         m = this.timeCheck(m);
         s = this.timeCheck(s);
         let timeD = h + ":" + m + ":" + s;
+        this.setState({h: h})
         return timeD
     }
 
@@ -37,11 +39,41 @@ class DateTime extends Component {
         return dateD;
     }
 
+    greeter() {
+        if(this.state.h >= 12) {
+            return (
+                <div className="">
+                    <h1>Good Afternoon, user {this.state.time}</h1>
+                    <h2>The time is {this.state.time}</h2>
+                    <h1>It's {this.dateGetter()}</h1>
+                </div>
+            
+            )
+        } else if(this.state.time >= 18) {
+            return (
+                <div>
+                    <h1>Good Evening, user. It is {this.state.time}</h1>
+                    <h2>The time is {this.state.time}</h2>
+                    <h1>It's {this.dateGetter()}</h1>
+                </div>
+            
+            )
+        } else {
+            return (
+                <div>
+                    <h1>Good Morning, user</h1>
+                    <h2>The time is {this.state.time}</h2>
+                    <h1>It's {this.dateGetter()}</h1>
+                </div>
+            
+            )
+        }
+    }
+
     render() {
         return (
             <div className="block DateTimeCont">
-                <h1>{this.dateGetter()}</h1>
-                <h2>{this.state.time}</h2>
+                {this.greeter()}
             </div>
         )
     }

@@ -1,0 +1,30 @@
+.greeterCont {
+    background: pink;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 4px;
+}
+
+.weatherDisplay {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
+}
+
+.weatherDisplay span {
+    display: flex;
+    align-items: center;
+}
+
+.low {
+    color: #00B4DB;
+}
+
+.mid {
+    color: #F37335;
+}
+
+.high {
+    color: #ED213A;
+}
