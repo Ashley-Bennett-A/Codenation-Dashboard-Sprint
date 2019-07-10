@@ -36,3 +36,23 @@ h2 {
   display: grid;
   align-content: center;
 }
+
+.usefulLinksContainer {
+  border: 2px green solid;
+  background-color: aliceblue;
+}
+
+.usefulLinksContainerInner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.usefulLink {
+  width: 150px;
+  height: 200px;
+}
+
+.usefulLink img {
+  width: 100px;
+  height: auto;
+}
