@@ -4,6 +4,8 @@ import "./App.css";
 import DateTime from "./Components/DateTime.jsx";
 import Search from "./Components/Search";
 import UsefulLinks from "./Components/UsefulLinks";
+import Games from "./Components/Games";
+import Chat from "./Components/Chat";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <UsefulLinks />
       <News />
       <Search />
+      <Chat />
+      {/* <Games /> */}
     </div>
   );
 }
