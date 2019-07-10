@@ -2,15 +2,18 @@ import React from "react";
 
 function NewsCardImage(props) {
   let className;
-  if (props.img !== null) {
+  let image;
+  if (props.image !== null) {
+    image = props.image;
     className = "newsCardImage";
   } else {
-    className = "noImage";
+    image = "https://www.placecage.com/300/200";
+    className = "newsCardImage";
   }
 
   return (
     <div className={className}>
-      <img src={props.image} alt="" />
+      <img src={image} alt="" />
     </div>
   );
 }
