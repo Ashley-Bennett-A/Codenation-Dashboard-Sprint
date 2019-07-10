@@ -57,6 +57,27 @@ h2 {
   height: auto;
 }
 
+.chuckNorris img {
+  animation: chuck 3s infinite;
+}
+
+@keyframes chuck {
+  0% {
+    transform: rotateZ(30deg);
+  }
+  25% {
+    transform: rotateZ(-30deg);
+  }
+  50% {
+    transform: rotateZ(30deg);
+  }
+  75% {
+    transform: rotateZ(-30deg);
+  }
+  100% {
+    transform: rotateZ(30deg);
+  }
+}
 .titleIndex {
   font-family: Helvetica, sans-serif;
   font-size: 38px;
