@@ -21,7 +21,8 @@ function App() {
       <News />
       <Search />
       <Chat />
-      <ChuckNorris /> {/* <Games /> */}{" "}
+      <ChuckNorris />
+      {/* <Games /> */}
     </div>
   );
 }
