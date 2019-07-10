@@ -47,8 +47,8 @@ function UsefulLinks(props) {
           return (
             <div className="usefulLink">
               <a href={websites.site} target="_blank" rel="noopener noreferrer">
-                <p>{websites.name}</p>
                 <img src={websites.image} alt="" />
+                <p>{websites.name}</p>
               </a>
             </div>
           );
