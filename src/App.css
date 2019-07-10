@@ -78,3 +78,7 @@ h2 {
     transform: rotateZ(30deg);
   }
 }
+.titleIndex {
+  font-family: Helvetica, sans-serif;
+  font-size: 38px;
+}
