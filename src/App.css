@@ -1,35 +1,83 @@
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+  background-color: rgba(#000, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+
 .news {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  height: 100vh;
-  width: 400px;
-  overflow: scroll;
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  animation: infinite linear ticker 100s;
+}
+
+.news:hover {
+  animation-play-state: paused;
 }
 
 .newsCard {
-  display: flex;
+  display: inline-block;
+  width: auto;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
 }
 
 .newsCardText {
-  width: 50%;
-  margin: 5px;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
 }
 
 .newsCardText h1 {
-  font-size: 10pt;
+  font-size: 12pt;
+  overflow-wrap: normal;
 }
 
 .newsCardImage {
-  width: 50%;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin: 5px;
 }
 
 .newsCardImage img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 110px;
+  padding: 0;
+  margin: 0;
   border-radius: 8px;
 }
 
