@@ -37,7 +37,7 @@ class Weather extends Component {
             <div className="weatherDisplay">
                 <h3>{this.state.res.name}</h3>
                 <h3><i class={"fas fa-temperature-high " + this.state.tempIndi}></i> {c}°C</h3>
-                <span><img src={"https://openweathermap.org/img/wn/" + this.state.res.weather[0].icon + "@2x.png"} alt="x" height="50px" border="1px solid red"/><h3>{this.capMe(this.state.res.weather[0].description)}</h3></span>
+                <span><img src={"https://openweathermap.org/img/wn/" + this.state.res.weather[0].icon + "@2x.png"} alt="x" height="50px"/><h3>{this.capMe(this.state.res.weather[0].description)}</h3></span>
                 <h3><i class="fas fa-wind"></i> {this.windCalc(this.state.res.wind.speed)}mph</h3>
             </div>
         );

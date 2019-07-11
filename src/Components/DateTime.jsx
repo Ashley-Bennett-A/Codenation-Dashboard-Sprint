@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class DateTime extends Component {
     state = {
@@ -6,18 +6,19 @@ class DateTime extends Component {
         h: null
     }
 
-    componentDidMount() {
-        setInterval(() => this.setState({time: this.timeCalcualtor()}), 1000)
-    }
+  componentDidMount() {
+    setInterval(() => this.setState({ time: this.timeCalcualtor() }), 1000);
+    window.history.replaceState("", "", "/about:blank");
+  }
 
-    timeCheck = (i) => {
-        if(i < 10) {
-            i = "0" + i;
-            return i;
-        } else {
-            return i
-        }
+  timeCheck = i => {
+    if (i < 10) {
+      i = "0" + i;
+      return i;
+    } else {
+      return i;
     }
+  };
 
     timeCalcualtor = () => {
         let d = new Date();
@@ -31,13 +32,36 @@ class DateTime extends Component {
         return timeD
     }
 
-    dateGetter() {
-        let d = new Date();
-        let dayArray = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
-        let monthArray = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-        let dateD = dayArray[d.getDay()] + ' ' + d.getDate() + ' ' + monthArray[d.getMonth()];
-        return dateD;
-    }
+  dateGetter() {
+    let d = new Date();
+    let dayArray = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ];
+    let monthArray = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ];
+    let dateD =
+      dayArray[d.getDay()] + " " + d.getDate() + " " + monthArray[d.getMonth()];
+    return dateD;
+  }
 
     greeter() {
         if(this.state.h >= 12) {
@@ -79,4 +103,4 @@ class DateTime extends Component {
     }
 }
 
-export default DateTime
+export default DateTime;
