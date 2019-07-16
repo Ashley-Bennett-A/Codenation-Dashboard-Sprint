@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Codenation-Dashboard-Sprint/static/css/main.56b830db.chunk.css",
+    "main.js": "/Codenation-Dashboard-Sprint/static/js/main.f191154e.chunk.js",
+    "main.js.map": "/Codenation-Dashboard-Sprint/static/js/main.f191154e.chunk.js.map",
+    "runtime~main.js": "/Codenation-Dashboard-Sprint/static/js/runtime~main.161c45f4.js",
+    "runtime~main.js.map": "/Codenation-Dashboard-Sprint/static/js/runtime~main.161c45f4.js.map",
+    "static/js/2.4f5674ce.chunk.js": "/Codenation-Dashboard-Sprint/static/js/2.4f5674ce.chunk.js",
+    "static/js/2.4f5674ce.chunk.js.map": "/Codenation-Dashboard-Sprint/static/js/2.4f5674ce.chunk.js.map",
+    "index.html": "/Codenation-Dashboard-Sprint/index.html",
+    "precache-manifest.1bdd6b91ca2a387e12106647baa8755e.js": "/Codenation-Dashboard-Sprint/precache-manifest.1bdd6b91ca2a387e12106647baa8755e.js",
+    "service-worker.js": "/Codenation-Dashboard-Sprint/service-worker.js",
+    "static/css/main.56b830db.chunk.css.map": "/Codenation-Dashboard-Sprint/static/css/main.56b830db.chunk.css.map",
+    "static/media/bada55_io.png": "/Codenation-Dashboard-Sprint/static/media/bada55_io.edf55b9f.png",
+    "static/media/chuck_norris.png": "/Codenation-Dashboard-Sprint/static/media/chuck_norris.3bb4ef9a.png",
+    "static/media/codepen.png": "/Codenation-Dashboard-Sprint/static/media/codepen.3fc5b513.png",
+    "static/media/codesandbox.svg": "/Codenation-Dashboard-Sprint/static/media/codesandbox.040e76c0.svg",
+    "static/media/csstricks.png": "/Codenation-Dashboard-Sprint/static/media/csstricks.c469bf91.png",
+    "static/media/fontawesome.svg": "/Codenation-Dashboard-Sprint/static/media/fontawesome.84580f12.svg",
+    "static/media/googlefonts.png": "/Codenation-Dashboard-Sprint/static/media/googlefonts.b517b3a1.png",
+    "static/media/hexacolor.png": "/Codenation-Dashboard-Sprint/static/media/hexacolor.7fb94052.png",
+    "static/media/App.css": "/Codenation-Dashboard-Sprint/static/media/shape4.f74b4395.svg",
+    "static/media/stackOverflow.svg": "/Codenation-Dashboard-Sprint/static/media/stackOverflow.92d70dec.svg"
+  }
+}
