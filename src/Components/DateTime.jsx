@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Search from './Search';
 
 class DateTime extends Component {
-  state = {
-    time: null
-  };
+    state = {
+        time: null,
+        h: null
+    }
 
   componentDidMount() {
     setInterval(() => this.setState({ time: this.timeCalcualtor() }), 1000);
@@ -19,16 +21,17 @@ class DateTime extends Component {
     }
   };
 
-  timeCalcualtor = () => {
-    let d = new Date();
-    let h = d.getHours();
-    let m = d.getMinutes();
-    let s = d.getSeconds();
-    m = this.timeCheck(m);
-    s = this.timeCheck(s);
-    let timeD = h + ":" + m + ":" + s;
-    return timeD;
-  };
+    timeCalcualtor = () => {
+        let d = new Date();
+        let h = d.getHours();
+        let m = d.getMinutes();
+        let s = d.getSeconds();
+        m = this.timeCheck(m);
+        s = this.timeCheck(s);
+        let timeD = h + ":" + m + ":" + s;
+        this.setState({h: h})
+        return timeD
+    }
 
   dateGetter() {
     let d = new Date();
@@ -61,14 +64,45 @@ class DateTime extends Component {
     return dateD;
   }
 
-  render() {
-    return (
-      <div className="block DateTimeCont">
-        <h1>{this.dateGetter()}</h1>
-        <h2>{this.state.time}</h2>
-      </div>
-    );
-  }
+    greeter() {
+        if(this.state.h >= 12) {
+            return (
+                <div className="">
+                    <h1>Good Afternoon, user</h1>
+                    <h2>The time is {this.state.time}</h2>
+                    <h1>It's {this.dateGetter()}</h1>
+                </div>
+            
+            )
+        } else if(this.state.time >= 18) {
+            return (
+                <div>
+                    <h1>Good Evening, user</h1>
+                    <h2>The time is {this.state.time}</h2>
+                    <h1>It's {this.dateGetter()}</h1>
+                </div>
+            
+            )
+        } else {
+            return (
+                <div>
+                    <h1>Good Morning, user</h1>
+                    <h2>The time is {this.state.time}</h2>
+                    <h1>It's {this.dateGetter()}</h1>
+                </div>
+            
+            )
+        }
+    }
+
+    render() {
+        return (
+            <div className="block DateTimeCont">
+                {this.greeter()}
+                <Search />
+            </div>
+        )
+    }
 }
 
 export default DateTime;

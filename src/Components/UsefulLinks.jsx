@@ -7,6 +7,7 @@ import FontawesomeLogo from "./assets/fontawesome.svg";
 import GooglefontLogo from "./assets/googlefonts.png";
 import baddassLogo from "./assets/bada55_io.png";
 import hexaLogo from "./assets/hexacolor.png";
+import "./UsefulLinks.css"
 
 function UsefulLinks(props) {
   let websites = [

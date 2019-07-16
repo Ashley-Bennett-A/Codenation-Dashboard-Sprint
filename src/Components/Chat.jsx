@@ -6,7 +6,7 @@ function Chat(props) {
       <iframe
         id="inlineFrameExample"
         title="Inline Frame Example"
-        width="400"
+        width="500"
         height="500"
         src="https://ashley-bennett-a.github.io/slack-clone/"
       />
