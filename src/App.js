@@ -11,12 +11,11 @@ import ChuckNorris from "./Components/ChuckNorris";
 function App() {
   return (
     <div className="App">
-      <h1>//about:blank</h1>
+      <h1 className="title">//about:blank</h1>
 
       <Greeter />
       <UsefulLinks />
       <News />
-      <Search />
       <Chat />
       <ChuckNorris />
       {/* <Games /> */}
