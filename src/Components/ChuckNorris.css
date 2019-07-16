@@ -1,43 +1,44 @@
 .chuckNorris {
-    height: 200px;
-    width: 500px;
-    margin: 5px;
-    background: #ffffff;
-    box-shadow: 1px 1px 10px -3px rgba(0,0,0,0.75);
-    border-radius: 10px;
-    grid-area: chuck;
-    align-self: center;
+  height: 200px;
+  width: 500px;
+  margin: 5px;
+  background: #ffffff;
+  box-shadow: 1px 1px 10px -3px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  grid-area: chuck;
+  align-self: center;
 }
 
 .chuckNorris img {
-    z-index: -1;
-    animation: chuckPeek 3s infinite
+  position: relative;
+  z-index: -1;
+  animation: chuckPeek 3s infinite;
 }
 
 @keyframes chuckPeek {
-    0% {
-        transform: translateY(-225px);
-    }
+  0% {
+    transform: translateY(-225px);
+  }
 
-    25% {
-        transform: translateY(-250px);
-    }
+  25% {
+    transform: translateY(-250px);
+  }
 
-    50% {
-        transform: translateY(-275px) rotate(10deg);
-    }
+  50% {
+    transform: translateY(-275px) rotate(10deg);
+  }
 
-    75% {
-        transform: translateY(-250px);
-    }
+  75% {
+    transform: translateY(-250px);
+  }
 
-    100% {
-        transform: translateY(-225px)
-    }
+  100% {
+    transform: translateY(-225px);
+  }
 }
 
 @media only screen and (max-width: 1440px) {
-    .chuckNorris {
-        width: 400px;
-    }
+  .chuckNorris {
+    width: 400px;
+  }
 }
