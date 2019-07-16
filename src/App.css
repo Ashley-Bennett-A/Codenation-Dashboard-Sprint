@@ -53,6 +53,7 @@
   padding-right: 100%;
   box-sizing: content-box;
   animation: infinite linear ticker 100s;
+  grid-area: news;
 }
 
 .news:hover {
@@ -92,55 +93,22 @@
 }
 
 .App {
+  height: 100vh;
   text-align: center;
   display: grid;
   justify-content: center;
   background-position: 
     top -120px left -140px,
-    top -180px right -200px,
+    top 230px right -200px,
     bottom -180px left -130px,
     bottom 240px right -210px;
     background-repeat:  no-repeat;
     background-size: 600px;
 
   background-image: url("./Components/assets/shape1.svg"), url("./Components/assets/shape2.svg"), url("./Components/assets/shape3.svg"), url("./Components/assets/shape4.svg");
-}
-
-
-.usefulLinksContainer {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 8px;
-  width: 65%;
-  text-align: center;
-}
-
-.usefulLinksContainerInner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-}
-
-.usefulLink {
-  width: 100px;
-  height: 150px;
-  flex-basis: 24%;
-  padding: 0;
-}
-
-.usefulLink p {
-  margin: 0;
-}
-
-.usefulLink img {
-  width: 100px;
-  height: auto;
-}
-
-.chuckNorris img {
-  animation: chuck 3s infinite;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 1fr 1fr 1fr;
+    grid-template-areas: "title title title title" "greeter greeter greeter greeter" "useful useful chuck chat" "useful useful chuck chat" "news news news news";
 }
 
 @keyframes chuck {
@@ -160,7 +128,25 @@
     transform: rotateZ(30deg);
   }
 }
+
 .titleIndex {
   font-family: Helvetica, sans-serif;
   font-size: 38px;
+}
+
+
+.gamesCont {
+  grid-area: game;
+}
+
+.title {
+  grid-area: title;
+}
+
+@media only screen and (max-width: 1440px) {
+  .App {
+    grid-template-columns: 600px 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 1fr 1fr 1fr;
+    grid-template-areas: "title title title title" "greeter greeter greeter greeter" "useful useful chuck chat" "useful useful chuck chat" "news news news news";
+  }
 }
