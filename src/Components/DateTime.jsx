@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Search from './Search';
 
 class DateTime extends Component {
     state = {
@@ -67,7 +68,7 @@ class DateTime extends Component {
         if(this.state.h >= 12) {
             return (
                 <div className="">
-                    <h1>Good Afternoon, user {this.state.time}</h1>
+                    <h1>Good Afternoon, user</h1>
                     <h2>The time is {this.state.time}</h2>
                     <h1>It's {this.dateGetter()}</h1>
                 </div>
@@ -76,7 +77,7 @@ class DateTime extends Component {
         } else if(this.state.time >= 18) {
             return (
                 <div>
-                    <h1>Good Evening, user. It is {this.state.time}</h1>
+                    <h1>Good Evening, user</h1>
                     <h2>The time is {this.state.time}</h2>
                     <h1>It's {this.dateGetter()}</h1>
                 </div>
@@ -98,6 +99,7 @@ class DateTime extends Component {
         return (
             <div className="block DateTimeCont">
                 {this.greeter()}
+                <Search />
             </div>
         )
     }

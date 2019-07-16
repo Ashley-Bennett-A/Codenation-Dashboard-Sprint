@@ -1,8 +1,10 @@
 .greeterCont {
-    background: pink;
+    background: #ffffff;
     border-radius: 10px;
     margin: 5px;
     padding: 4px;
+    grid-area: greeter;
+    box-shadow: 1px 1px 10px -3px rgba(0,0,0,0.75);
 }
 
 .weatherDisplay {
